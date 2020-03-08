@@ -1,0 +1,360 @@
+html {
+    height: 100%;
+
+}
+body{
+  background-color: #f2f1ed!important;
+  background-image: url('http://personalized-wedding-design.com/wp-content/themes/white-rock/images/body.jpg');
+  font-family: 'EB Garamond', serif !important;
+  margin: 0px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.page-header{
+  font-family: 'Satisfy', cursive;
+}
+
+.ui-widget, .ui-widget input {
+    font-family: 'EB Garamond', serif !important;
+}
+
+p, label, li{
+  font-size: 18px;
+}
+
+.faq-main li{
+  font-size: 1.0rem;
+}
+
+.hero-getting-married{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+color: white;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/new-header.png');
+ background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+section h1{
+  font-size: 5em;
+  margin-top:0;
+  margin-bottom: 0.5em;
+}
+
+section.btn{
+  display: block;
+  width: 200px;
+
+padding: 1em;
+margin-top: 50px;
+margin-left: auto;
+   margin-right: auto;
+   color: white;
+   text-decoration: none;
+   font-size: 1.5em;
+
+  border: 3px solid white;
+  border-radius: 20px;
+  background-color: rgba(220, 53, 69, 0.8);
+}
+
+section.hero-welcome {
+
+    color: white;
+}
+
+section.hero-welcome h2{
+  font-size: 2.5em;
+  text-align: center;
+}
+
+section.hero-welcome p{
+  font-size: 28px;
+}
+
+
+section.hero-our-story {
+  width:100vw;
+  padding: 20px;
+  background-color: #2c2c2c;
+  color: white;
+}
+
+section.hero-our-story h2{
+  font-size: 2.5em;
+  text-align: center;
+}
+
+section.hero-our-story p{
+  font-size: 28px;
+}
+
+section.hero-acacia{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+color: white;
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../images/sequioa.jpg');
+ background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+section.hero-acacia h2{
+  font-size: 2.5em;
+  text-align: center;
+}
+
+section.hero-acacia p{
+  font-size: 28px;
+}
+
+section.hero-acacia small{
+  text-align: right;
+
+}
+
+section.hero-suppliers{
+
+padding: 20px;
+}
+section.hero-suppliers h2{
+  font-size: 2.5em;
+  text-align: center;
+}
+
+section.hero-suppliers p{
+  font-size: 28px;
+  text-align:center;
+}
+
+
+
+.hero-error-page{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+color: white;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/IMG_20180712_224030.jpg');
+ background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+section.hero-footer{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+color: white;
+background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../images/wedding_rings.jpg');
+ background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+section.hero-footer h2{
+  font-size: 1.75rem;
+}
+
+section.hero-footer h3{
+  font-size: 1.5rem;
+}
+section h1{
+  font-size: 5em;
+  margin-top:0;
+  margin-bottom: 0.5em;
+}
+
+section [class*="btn"]{
+  display: block;
+  width: 200px;
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: 3px solid white;
+  border-radius: 20px;
+  background-color: rgba(30, 72, 133, 0.8);
+}
+
+section [class*="btn"]:hover{
+  display: block;
+  width: 200px;
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #E6dbc9 !important;
+  text-decoration: none;
+  font-size: 1.5em;
+  border: 3px solid white;
+  border-radius: 20px;
+  background-color: rgba(30, 72, 133, 0.8);
+}
+
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+    background: #1E4885;
+    width: 100vw;
+    /* For fixed navbar */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999;
+    width: 100%; */
+}
+li.nav-item {
+    padding-right: 30px;
+    font-size: 20px;
+}
+.navbar-toggler-icon{
+  color: #2c2c2c !important;
+}
+.navbar-brand{
+  color: #fff !important;
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+  font-size: 2.5em;
+}
+.navbar-nav  li a {
+    color: #fff !important;
+}
+.navbar-nav  li a:hover {
+    color: #E6dbc9 !important;
+    text-decoration: none;
+}
+
+
+
+.padding-btm-60 {
+	padding-bottom: 60px;
+}
+
+
+
+.footer p {
+	margin-top: 25px;
+	font-size: 18px;
+  color: #fff;
+}
+
+.footer-copyright{
+background-color: #AD3739 !important;
+}
+
+.red-bg{
+  background-color: #C53211 !important;
+}
+
+.black-bar{
+  background-color: #2E3830 !important;
+  color: #fff;
+  text-align: center;
+  height: 42px;
+}
+.black-bar::after{
+content: "";
+position: absolute;
+left: 50%;
+/* bottom: -15px; */
+margin-left: -16px;
+width: 0;
+height: 0;
+border-left: 16px solid transparent;
+border-right: 16px solid transparent;
+border-top: 16px solid #2E3830;
+}
+
+.our-story{
+  margin-top:20px;
+}
+
+aside {
+  /*float: right;
+     width: 28%; */
+  color: white;
+  padding: 0px 5% 10px;
+  background: #1E4885;
+  border-top: 20px solid #302b63;
+  display: block;
+  margin-top: 10px;
+  }
+
+/*  CARD */
+.card-signin .card-img-left-invite {
+  width: 100%;
+  /* Link to your background image using in the property below! */
+  background: scroll center url('/images/WeddingInvite_5.png');
+  background-size: cover;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+.card-header{
+  text-align:center;
+  background-color: #1E4885;
+  color: white;
+  font-family: 'Satisfy', cursive;
+  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+iframe{
+  osition: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    border: 0;
+}
+
+
+#accordion button{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+}
+
+ul.contact-people{
+  font-size:18px;
+}
+
+.directions {
+    color: white;
+    background-color: #c54150;
+}

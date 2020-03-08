@@ -1,0 +1,71 @@
+<%- include("partials/header") -%>
+<div class="padding-btm-60"></div>
+<p>   <%- messages('messages', locals) %> </p>
+<div class="container">
+  <h3>LOGIN</h3>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <p>Please enter the required fields below to continue</p>
+          <!-- Makes POST request to /login route -->
+          <form class="needs-validation" action="/login" method="POST" novalidate>
+            <div class="form-group">
+              <label for="username">Email</label>
+              <input type="text" class="form-control" name="username" placeholder="Email (Required)" autocomplete="off" required="required">
+              <small id="nameHelp" class="form-text text-muted">
+                  This is the email you used when you registered.
+              </small>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password" placeholder="Password (Required)" autocomplete="off" required="required">
+              <small id="nameHelp" class="form-text text-muted">
+                  Please use the password we provided when we sent you the invite.
+              </small>
+            </div>
+            <button type="submit" class="btn btn-dark">Proceed to RSVP</button>
+          </form>
+
+          <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+
+          <br>
+          <p>Not yet a registered guest? Click <a href="/register" target="_blank">here</a> to register</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <%- include("partials/help-aside") -%>
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
+
+<div class="padding-btm-60"></div>
+<%- include("partials/footer") -%>

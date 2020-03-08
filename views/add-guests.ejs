@@ -1,0 +1,79 @@
+<%- include("partials/header") -%>
+<div class="padding-btm-60"></div>
+<div class="container">
+
+<h1>Add Guests</h1>
+<div class="row">
+  <div class="col-md-12">
+    <p>
+  Add guests here.
+    </p>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">
+          <img src="images/WeddingInvite_title_small_blue.png" class="img img-fluid" alt="">
+        </p>
+      </div>
+    </div>
+  </div>
+
+<div class="col-md-6">
+  <div class="card">
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>Guest</strong>
+    </h5>
+    <div class="card-body px-lg-5 pt-0">
+      <form class="needs-validation" action="/add-guests" method="post" novalidate>
+
+        <div class="form-group">
+          <label for="guestName">Guest's Name</label>
+          <input type="text" class="form-control" name="guestName" placeholder="Guest Name (Required)" autocomplete="off" required="required">
+          <div class="invalid-feedback">
+            Please enter your guest's full name.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" name="submitBtn" class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0"  >Submit</button>
+        </div>
+
+      </form>
+  <p><a href="/logout" class="btn btn-outline-danger btn-block">Logout</a></p>
+      <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+
+
+
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+  </div>
+</div>
+</div>
+<div class="padding-btm-60"></div>
+<%- include("partials/footer") -%>

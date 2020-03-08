@@ -1,0 +1,130 @@
+<%- include("partials/header") -%>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+$( function() {
+
+  $( "#guestName" ).autocomplete({
+    source: <%- JSON.stringify(guestListItems)  %>
+
+  });
+} );
+</script>
+
+<div class="padding-btm-60"></div>
+
+<div class="container ">
+  <h1 class="page-header">RSVP</h1>
+<div class="row">
+  <div class="col-md-12">
+    <p>
+    We would like to request the honor of your presence as we exchange vows. <br>
+   (And let’s face it ― the reception party will be more fun when you’re around!)
+    </p>
+
+
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+
+        <div class="card-body">
+          <p class="card-text">
+            <img src="images/WeddingInvite_blue.png" class="img img-fluid" alt="">
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-6">
+
+      <div class="card">
+
+          <h5 class="card-header info-color white-text text-center py-4">
+              <strong>RSVP</strong>
+          </h5>
+
+          <!--Card content-->
+          <div class="card-body px-lg-5 pt-0">
+            <p>
+              Please fill in all the required fields below. You have until December 15, 2019 to submit your RSVP. <br>
+               You can change always change your response until the deadline. Just fill up the form again and submit. <br>
+               All responses received after December 15, 2019 will be assumed final.
+            </p>
+
+              <!-- Form -->
+              <form class="needs-validation" action="/rsvp-new" method="post" novalidate>
+
+                <div class="form-group ui-widget">
+                  <label for="guestName">Name</label>
+                  <input type="text" class="form-control" id="guestName" name="guestName" placeholder="Name (Required)" autocomplete="off" required="required">
+                  <small id="nameHelp" class="form-text text-muted">Please look <strong>only</strong> for your name</small>
+                  <div class="invalid-feedback">
+                    Please search for your name.
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="mobileNum">Mobile Number</label>
+                  <input type="tel" class="form-control" name="mobileNum3"  placeholder="Mobile # (Optional)" autocomplete="off"   pattern="^\d{11}$" minlength="11">
+                  <small id="phoneHelp" class="form-text text-muted">please follow this format: 09123456789</small>
+                  <small>This will be for our wedding coordinator’s reference in case we need to reach you via mobile. Our primary mode of contact will be via Facebook Messenger</small>
+                    <div class="invalid-feedback">
+                    Please provide a valid mobile number.
+                    </div>
+                </div>
+              <div class="form-group">
+              <label for="inputRSVP">RSVP</label>
+              <select id="inputRSVP" name="response3" class="form-control" required>
+                <option value="" disabled selected>Choose a response (Required)</option>
+                <option value="accept">Count me in for the ceremony and reception!</option>
+                <option value="decline">I’m sorry I won’t be able to make it.</option>
+              </select>
+               <div class="invalid-feedback">Please make a selection</div>
+            </div>
+                <div class="form-group">
+                  <button type="submit" name="submitBtn" class="btn btn-outline-primary btn-rounded btn-block my-4 waves-effect z-depth-0"  >Submit</button>
+                </div>
+              </form>
+              <!-- Form -->
+
+              <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              </script>
+
+
+
+          </div>
+
+      </div>
+<%- include("partials/help-aside") -%>
+    </div>
+  </div>
+
+</div>
+<div class="padding-btm-60"></div>
+
+<%- include("partials/footer") -%>

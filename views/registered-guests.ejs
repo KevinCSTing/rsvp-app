@@ -1,0 +1,36 @@
+<%- include("partials/header") -%>
+<div class="padding-btm-60"></div>
+
+<div class="container">
+  <h3>Registered guests</h3>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Guest Name</th>
+        <th scope="col">Email</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+    <%  guestListItems.forEach(function(item){ %>
+        <tr>
+          <td> <%= item.firstName +" " +item.lastName %></td>
+          <td> <%= item.email %></td>
+
+      
+        </tr>
+
+      <% }); %>
+
+
+
+    </tbody>
+  </table>
+
+
+</div>
+
+<div class="padding-btm-60"></div>
+<%- include("partials/footer") -%>

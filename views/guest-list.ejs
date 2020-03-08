@@ -1,0 +1,38 @@
+<%- include("partials/header") -%>
+<div class="padding-btm-60"></div>
+<div class="container">
+<h3>Wedding Guests</h3>
+<p>Click <a href="/add-guests">here</a> to add more guests.</p>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Guest Name</th>
+      <th scope="col">Mobile #</th>
+      <th scope="col">RSVP</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <%  guestListItems.forEach(function(item){ %>
+      <tr>
+        <td> <%= item.guestName %></td>
+        <td> <%= item.mobileNum %></td>
+        <td> <%= item.rsvp %></td>
+        <td><form class="" action="/delete-guest" method="post">
+           <button type="submit" class="btn btn-link" name="deleteBtn" value="<%= item._id %>" onChange="this.form.submit()">delete</button>
+        </form>
+        </td>
+      </tr>
+
+    <% }); %>
+
+
+
+  </tbody>
+</table>
+
+
+</div>
+<div class="padding-btm-60"></div>
+<%- include("partials/footer") -%>
